@@ -81,6 +81,10 @@ func (b *Base) QueryRequest(query string, v *url.Values) (*http.Response, error)
 		return nil, err
 	}
 
+	if resp != nil {
+		return nil, errors.New("resp is nil")
+	}
+
 	if b.debug {
 		data, _ := httputil.DumpRequest(request, true)
 		fmt.Printf("Request: %s", string(data))
