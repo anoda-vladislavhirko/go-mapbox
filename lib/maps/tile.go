@@ -6,7 +6,7 @@ import (
 	"image/draw"
 	"math"
 
-	"github.com/ryankurte/go-mapbox/lib/base"
+	"github.com/anoda-vladislavhirko/go-mapbox/lib/base"
 	"image/color"
 )
 
